@@ -10,7 +10,8 @@ Obtener aquellos elementos del DF1 que no se encuentran en el DF2
 ```
 DF2[~DF2['A'].isin(DF1['A'])]
 ```
-
+## Geopandas
+Extraer los valores de aquellas entidades que coinciden espacialmentte
 
 ```
 
