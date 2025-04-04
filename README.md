@@ -2,6 +2,11 @@
 Serie de procesos realizados con regularidad en el procesamiento de información
 <br><br>
 
+Visualizar todas las columnas de un DF en un notebook
+```
+pd.set_option('display.max_columns', None)
+```
+
 Concatenar columnas, agregando un separador y omitiendo nulos
 ```
 df['concatenada'] = df[['col1', 'col2', 'col3']].astype(str).agg(lambda x: ', '.join(x.dropna()), axis=1)
