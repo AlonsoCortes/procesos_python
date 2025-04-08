@@ -36,6 +36,11 @@ Filtrar registros de acuerdo a uno o más valores dentro de una columna
 df_sub = df[df["columna"].isin(["valor1", "valor2", "valor3"])]
 ```
 <br><br>
+Filtrar registros que no son 
+```
+df_sub = df[~df["columna"].isin(["valor1", "valor2", "valor3"])]
+```
+<br><br>
 
 Filtrar registros de acuerdo a valores en multiples columnas
 ```
